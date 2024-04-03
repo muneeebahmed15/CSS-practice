@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day10.css">
+</head>
+<body>
+    <div class="frame">
+        <div class="center">
+          <!-- Loop for creating point sets -->
+          <% (1..15).each do |i| %>
+            <div class="point-set-<%= i %>">
+              <!-- Loop for creating points -->
+              <% (1..4).each do |j| %>
+                <div class="point-<%= j %>"></div>
+              <% end %>
+            </div>
+          <% end %>
+          <!-- End of point sets -->
+          <div class="ring">
+            <div class="mask-1">
+              <div class="spin"></div>
+            </div>
+            <div class="mask-2">
+              <div class="spin"></div>
+            </div>
+          </div>
+          <svg class="spinner" viewBox="0 0 202 202" xmlns="https://www.w3.org/2000/svg">
+            <circle cx="101" cy="101" r="99.5"></circle>
+          </svg>
+          <div class="date">Mon 15 Jan 2015</div>
+          <div class="time">11:42</div>
+          <div class="beat"><span class="fa fa-heart"></span>81</div>
+          <div class="energy">1248 kcal</div>
+        </div>
+      </div>
+      
+</body>
+</html>

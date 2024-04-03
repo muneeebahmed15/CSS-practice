@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="day9.css">
+</head>
+<body>
+    <div class="frame">
+        <div class="moon">
+          <!-- Loop for creating craters -->
+          <% (1..11).each do |i| %>
+            <div class="crater-<%= i %>"></div>
+          <% end %>
+        </div>
+        <div class="hill-bg-1"></div>
+        <div class="hill-bg-2"></div>
+        <div class="hill-fg-1"></div>
+        <div class="hill-fg-2"></div>
+        <div class="hill-fg-3"></div>
+        <div class="front">
+          <div class="temperature">12°</div>
+          <div class="info">Wind: E 7 km/h <br/> Humidity: 87%</div>
+          <table class="preview">
+            <tr>
+              <td>Tue</td>
+              <td>21° / 9°</td>
+            </tr>
+            <tr>
+              <td>Wed</td>
+              <td>23° / 10°</td>
+            </tr>
+          </table>
+        </div>
+        <!-- Loop for creating drop-big elements -->
+        <% (1..10).each do |i| %>
+          <div class="drop-big-<%= i %>"></div>
+        <% end %>
+        <!-- Loop for creating drop-medium elements -->
+        <% (1..10).each do |i| %>
+          <div class="drop-medium-<%= i %>"></div>
+        <% end %>
+        <!-- Loop for creating drop-small elements -->
+        <% (1..10).each do |i| %>
+          <div class="drop-small-<%= i %>"></div>
+        <% end %>
+      </div>
+      
+</body>
+</html>
